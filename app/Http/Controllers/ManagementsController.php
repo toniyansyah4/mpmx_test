@@ -104,7 +104,7 @@ class ManagementsController extends Controller
         $managements->user_id = $request->user_id;
         $managements->position = $request->position;
         $managements->jobdesc = $request->jobdesc;
-        $managements->level = $request->level;
+        $managements->level_id = $request->level;
         $managements->save();
 
         return redirect()->route('management')->with('success', 'Management telah berhasil diupdate');
