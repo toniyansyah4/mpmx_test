@@ -93,13 +93,13 @@
                                 <a class="dropdown-item {{ request()->route()->named('admin') ? 'active' : '' }}"
                                     href="{{ route('admin') }}">News</a>
                                 <a class="dropdown-item {{ request()->route()->named('departement')  ? 'active' : '' }}"
-                                    href="{{ route('departement') }}">Departement</a>
+                                    href="{{ route('departement-employe') }}">Departement</a>
                                 <a class="dropdown-item {{ request()->route()->named('divisi')  ? 'active' : '' }}"
-                                    href="{{ route('divisi') }}">Divisi</a>
+                                    href="{{ route('divisi-employe') }}">Divisi</a>
                                 <a class="dropdown-item {{ request()->route()->named('direktur')  ? 'active' : '' }}"
-                                    href="{{ route('direktur') }}">Direktur</a>
+                                    href="{{ route('direktur-employe') }}">Direktur</a>
                                 <a class="dropdown-item {{ request()->route()->named('management')  ? 'active' : '' }}"
-                                    href="{{ route('management') }}">Management</a>
+                                    href="{{ route('management-employe') }}">Management</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">

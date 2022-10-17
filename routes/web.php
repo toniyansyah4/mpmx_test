@@ -93,18 +93,18 @@ Route::group(['middleware' => 'employee'], function () {
     Route::get('/read-news/{slug}', [App\Http\Controllers\NewsController::class, 'read'])->name('read-news');
 
     // Departement
-    Route::get('/departement/employe', [App\Http\Controllers\DepartementController::class, 'index'])->name('departement');
+    Route::get('/departement/employe', [App\Http\Controllers\DepartementController::class, 'index'])->name('departement-employe');
     Route::get('/read-departement/{id}', [App\Http\Controllers\DepartementController::class, 'read'])->name('read-departement');
 
     // Direktur
-    Route::get('/direktur/employe', [App\Http\Controllers\DirekturController::class, 'index'])->name('direktur');
+    Route::get('/direktur/employe', [App\Http\Controllers\DirekturController::class, 'index'])->name('direktur-employe');
     Route::get('/read-direktur/{id}', [App\Http\Controllers\DirekturController::class, 'read'])->name('read-direktur');
 
     // Divisi
-    Route::get('/divisi/employe', [App\Http\Controllers\DivisiController::class, 'index'])->name('divisi');
+    Route::get('/divisi/employe', [App\Http\Controllers\DivisiController::class, 'index'])->name('divisi-employe');
     Route::get('/read-divisi/{id}', [App\Http\Controllers\DivisiController::class, 'read'])->name('read-divisi');
 
     // Managements
-    Route::get('/management/employe', [App\Http\Controllers\ManagementsController::class, 'index'])->name('management');
+    Route::get('/management/employe', [App\Http\Controllers\ManagementsController::class, 'index'])->name('management-employe');
     Route::get('/read-management/{id}', [App\Http\Controllers\ManagementsController::class, 'read'])->name('read-management');
 });
